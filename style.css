@@ -1,0 +1,476 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+/* starts here */
+
+body{
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Bai Jamjuree", sans-serif;
+ 
+  font-style: normal;
+}
+header{
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1{
+    color: hsl(171, 66%, 44%);
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 10rem;
+    padding-bottom: 0px; 
+}
+header span{
+    color: hsl(210, 10%, 33%);
+    font-size: 3em;
+    font-weight: 500;
+}
+header p{
+    color: hsl(201, 11%, 66%);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    width: 47.5%;
+    padding-bottom: 2em;
+}
+.header-buttons{
+    display: flex;
+    gap: 2rem;
+}
+.header-buttons .download {
+    border-radius: 500px;
+    height: 3rem;
+    border: transparent;
+}
+.one{
+    background: hsl(171, 66%, 44%);
+    color: white;
+    box-shadow: 0px 0px 5px 1px hsl(171, 66%, 44%);
+}
+.two{
+    background: hsl(233, 100%, 69%);
+    color: white;
+    box-shadow: 0px 0px 5px 1px hsl(233, 100%, 69%);
+}
+/* keep track part css */
+#keep-track{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+
+}
+#keep-track h2{
+    color: hsl(210, 10%, 33%);
+    font-size: 2em;
+    font-weight: 600;
+}
+#keep-track p{
+    color: hsl(201, 11%, 66%);
+    font-size: 1em;
+    font-weight: 400;
+    width: 48.5%;
+    text-align: center;
+    line-height: 2em;
+}
+/* mac image part css */
+#mac-image{
+    height: 37rem;
+    width: 100%;
+    display: flex;
+}
+
+
+.image{
+    height: 100%;
+    width: 50%;
+    padding-top: 1rem;
+}
+.quick-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+   
+    
+}
+.quick-search h2{
+    font-weight: 500;
+   
+    color: hsl(210, 10%, 33%);
+}
+.quick-search p{
+    color: hsl(201, 11%, 66%);
+    width: 70%;
+    font-weight: 600;
+    line-height: 2em;
+    padding-bottom: 2.5em;
+}
+/* access anywhere css */
+.access-anywhere{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 7rem;
+    padding-top: 5rem;
+}
+.access-anywhere p{
+    font-size: 2.5em;
+    color: hsl(210, 10%, 33%);
+    font-weight: 500;
+    padding-bottom: .3em;
+}
+.access-anywhere span{
+    font-size: 1em;
+    color: hsl(201, 11%, 66%);
+    font-weight: 500;
+    padding-bottom: .3em;
+    text-align: center;
+}
+/* devices css */
+#devices{
+    display: flex;
+    justify-content: center;
+}
+
+/* logos css */
+#logos{
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    justify-content: space-around;
+    align-items: center;
+}
+#logos .logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo img{
+    width: 20%;
+}
+.logo h3{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    font-size: 1.5em;
+    
+}
+.logo p{
+    text-align: center;
+    color: hsl(201, 11%, 66%);
+    
+}
+/* companies image css */
+#companies{
+    display: flex;
+    justify-content: space-around;
+    height: 14rem;
+    align-items: center;
+}
+/* clipboard css */
+#clipboard{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 3rem;
+}
+#clipboard h2{
+    color: hsl(210, 10%, 33%);
+    font-size: 2.5em;
+    font-weight: 500;
+    padding-bottom: .7em;
+}
+#clipboard p{
+color: hsl(201, 11%, 66%);
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 3em;
+}
+/* footer */
+
+footer{
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: hsla(202, 11%, 66%, 0.199);
+}
+footer .foot{
+height: 100%;
+width: 25%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+footer ul{
+    list-style: none;
+}
+.list4 img{
+    height: 2em;
+}
+footer h1{
+    color: hsl(171, 66%, 44%);
+    font-size: 5em;
+    font-weight: 500;
+}
+footer ul{
+    color: hsl(210, 10%, 33%);
+}
+/* responsive code here */
+@media (max-width:600px) {
+    header span{
+        font-size: 1.4em;
+    }
+    header p{
+        font-size: 1em;
+        width: 56%;
+        padding-bottom: 2.5em;
+    }
+    #keep-track h2{
+        font-size: 1.4em;
+    }
+    #keep-track p{
+        font-size: .8em;
+       
+    }
+    #mac-image{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .image{
+        width: 100%;
+    }
+    .quick-search{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+
+    }
+    .quick-search p{
+        width: 98%;
+    }
+    .quick-search h2{
+        width: 98%;
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    
+    .access-anywhere{
+       height: 19rem;
+       padding-top: 10rem;
+    }
+    .access-anywhere p{
+        font-size: 1.6em;
+        font-weight: 800;
+        
+    }
+    .access-anywhere span{
+        font-size: 1em;
+        width: 80%;
+    }
+    
+    #logos{
+        flex-direction: column;
+        width: 100%;
+        height: 30rem;
+       
+    }
+    #logos .logo{
+        width: 100%;
+        
+    }
+    .logo img{
+        width: 20%;
+    }
+    
+    #companies{
+        flex-direction: column;
+        height: 30rem;
+    }
+    #clipboard h2{
+        font-size: 1.6em;
+        font-weight: 800;
+    }
+
+    footer h1{
+        font-size: 3em;
+    }
+    footer ul{
+        color: hsl(210, 10%, 33%);
+        font-size: .6em;
+    }
+    .list4 img{
+        height: 1em;
+    }
+    }
+
+
+
+    @media (min-width:601px) and (max-width:800px) {
+        
+           
+     
+        header span{
+            font-size: 1.4em;
+        }
+        header p{
+            font-size: 1em;
+            width: 56%;
+            padding-bottom: 2.5em;
+        }
+        #mac-image{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .image{
+            width: 100%;
+        }
+        .quick-search{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+       
+        .quick-search p{
+            width: 98%;
+        }
+        .quick-search h2{
+            width: 98%;
+            text-align: center;
+            font-size: 2em;
+        }
+        
+        
+        .access-anywhere{
+           height: 19rem;
+           padding-top: 16rem;
+        }
+
+        .access-anywhere p{
+            font-size: 1.6em;
+            font-weight: 800;
+            
+        }
+        .access-anywhere span{
+            font-size: 1em;
+            width: 80%;
+
+        }
+        
+        #logos{
+            flex-direction: column;
+            width: 100%;
+            height: 30rem;
+           
+        }
+        #logos .logo{
+            width: 100%;
+            
+        }
+        .logo img{
+            width: 20%;
+        }
+        
+        #companies{
+            flex-direction: column;
+            height: 30rem;
+        }
+        #clipboard h2{
+            font-size: 1.6em;
+            font-weight: 800;
+        }
+    
+        footer h1{
+            font-size: 3em;
+        }
+        footer ul{
+            color: hsl(210, 10%, 33%);
+            font-size: .6em;
+        }
+        .list4 img{
+            height: 1em;
+        }
+
+        #keep-track{
+            padding-bottom: 16rem;
+        }
+      
+    }
+        
+    
+   @media(min-width:801px) and (max-width:1300px) {
+        .quick-search h2{
+            padding-left: 2.5rem
+        }
+        .quick-search p{
+            padding-left: 2.5rem
+        }
+     }
